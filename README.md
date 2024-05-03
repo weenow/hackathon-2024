@@ -41,7 +41,7 @@ No dia **09/05/2024, às 16:00h**, será divulgado aqui neste `README.md` o desa
 - Crie uma pasta com o nome da sua dupla ou o seu nome em `/participantes/nome-da-dupla`;
 - Execute o desafio e faças os `commits` na sua `branch`;
 - Faça os `push` para o seu repositório;
-- Assim que fianlizar, crie um `pull request` para este repositório;
+- Assim que finalizar o desafio, crie um `pull request` para este repositório;
 - Agora é só aguardar a avaliação.
 
 ## 🚨 Como deve ser a entrega?
@@ -54,13 +54,13 @@ A aplicação deve rodar em um container Docker. Para isso, você deve criar um 
 
 ## ✨ Critérios para vencer
 
-Para vencer o 🚀 Hackathon 2024 🚀, você precisará pontuar em cada critério abaixo:
+Para vencer o Hackathon 2024 🚀, você precisará pontuar em cada critério abaixo:
 
-1. 🐙 `Fork` do repositório e `Pull Request` com a tentativa de solução do desafio; **(15 pontos)**
-2. 📜 `README.md` com instruções de como rodar a aplicação; **(10 pontos)**
-3. 🐋 `Dockerfile` e `docker-compose.yml` para subir a aplicação; **(15 pontos)**
-4. 🎖️ `Módulo X` do desafio entregue e funcional; **(20 pontos)**
-5. 🤴 `Módulo Y` do desafio entregue e funcional; **(40 pontos)**
+1. 🐙 `Fork` do repositório e `Pull Request` com a tentativa de solução do desafio; **(5 pontos)**
+2. 📜 `README.md` com instruções de como rodar a aplicação; **(5 pontos)**
+3. 🐋 `Dockerfile` e `docker-compose.yml` para subir a aplicação; **(5 pontos)**
+4. 🎖️ `Módulo X` do desafio entregue e funcional; **(30 pontos)**
+5. 🤴 `Módulo Y` do desafio entregue e funcional; **(55 pontos)**
 
 Cada critério terá uma quantidade específica de pontos conforme mencionado anteriormente em cada item. O valor máximo de pontuação será de `100 pontos`. A equipe/pessoa que obtiver a maior pontuação será a vencedora.
 
