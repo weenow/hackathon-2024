@@ -24,7 +24,7 @@ Seguir as instruções abaixo e ler atentamente a descrição do desafio que ser
 - OCR
 - Docker
 
-Bibliotecas que podem ser utilizadas para auxiliar no desenvolvimento do desafio:
+Bibliotecas recomendadas para auxiliar no desenvolvimento do desafio:
 
 - [tesseract.js](https://www.npmjs.com/package/tesseract.js)
 - [bullmq](https://bullmq.io/)
