@@ -14,6 +14,8 @@ Seguir as instruções abaixo e ler atentamente a descrição do desafio que ser
 
 > As pessoas que não quiserem formar duplas, poderão participar individualmente.
 
+> Estou remoto. Poderei participar? Sim, poderá participar remotamente.
+
 ## 📄 Tópicos que serão abordados
 
 - Node.js
