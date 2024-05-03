@@ -1,4 +1,4 @@
-# hackathon-2024
+# Hackathon 2024
 
 Seja bem-vindo ao Hackathon 2024  da **WeeNow** 🚀. A seguir, você encontrará todas as informações necessárias para participar do evento.
 
