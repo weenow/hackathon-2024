@@ -87,7 +87,10 @@ Dicas:
 - Faça a extração dos textos utilizando ROI (Region of Interest)
 - Utilize o `tesseract.js` para processar a imagem e extrair o texto;
 - Utilize o `opencv-js` para processar a imagem e extrair o objeto;
+- Não esqueça de fazer a detecção de faces.
 
 > Utilize os endpoints já criados no arquivo `src/routes.js` para implementar a solução.
+
+> Não precisa implementar nada além do que foi solicitado.
 
 
