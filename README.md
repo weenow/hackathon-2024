@@ -74,8 +74,8 @@ Implementar uma API que receba um arquivo de imagem e faça o upload para um ser
 
 Dicas:
 
-- Utilize o `bullmq` para criar a fila de processamento;
-- Utilize os endpoints já criados no arquivo `src/routes.js` para implementar a solução.
+- Utilize os endpoints já criados no arquivo `src/routes.js` para efetuar o upload da imagem e inserir na fila de processamento;
+- Utilize o `bullmq` para gerir a fila de processamento;
 
 ### Módulo OCR: 
 
@@ -83,10 +83,13 @@ Implementar um serviço que receba o arquivo de imagem, faça o processamento da
 
 Dicas:
 
-- Faça o processamento da imagem ajustando para remover ruídos e preservar a qualidade da imagem e textos;
+- Faça o processamento da imagem para remover ruídos e preservar a qualidade dos textos;
+- Converta a imagem para escala de cinza (isso ajuda a melhorar a qualidade da imagem e leitura das ROI's);
 - Faça a extração dos textos utilizando ROI (Region of Interest)
+
 - Utilize o `tesseract.js` para processar a imagem e extrair o texto;
 - Utilize o `opencv-js` para processar a imagem e extrair o objeto;
+
 - Não esqueça de fazer a detecção de faces.
 
 > Utilize os endpoints já criados no arquivo `src/routes.js` para implementar a solução.
