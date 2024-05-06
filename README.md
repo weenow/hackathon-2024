@@ -1,6 +1,6 @@
 # Hackathon 2024
 
-Seja bem-vindo ao Hackathon 2024  da **WeeNow** 🚀. A seguir, você encontrará todas as informações necessárias para participar do evento.
+Seja bem-vindo ao Hackathon 2024 da **WeeNow** 🚀. A seguir, você encontrará todas as informações necessárias para participar do evento.
 
 ## 📌 O que preciso fazer?
 
@@ -38,10 +38,10 @@ No dia **09/05/2024, às 16:00h**, será divulgado aqui neste `README.md` o desa
 - Faça um `fork` deste repositório;
 - Clone o repositório para a sua máquina;
 - Crie uma `branch` com o seu **nome** ou **nome da dupla**;
-- Crie uma pasta com o nome da sua dupla ou o seu nome em `/participantes/nome-da-dupla`;
+- Copie e renomeie a pasta `template` para `/participants/nome-da-dupla`;
 - Execute o desafio e faças os `commits` na sua `branch`;
 - Faça os `push` para o seu repositório;
-- Assim que finalizar o desafio, crie um `pull request` para este repositório;
+- Assim que finalizar o desafio, crie um `pull request` para este repositório com a sua solução;
 - Agora é só aguardar a avaliação.
 
 ## 🚨 Como deve ser a entrega?
@@ -59,8 +59,8 @@ Para vencer o Hackathon 2024 🚀, você precisará pontuar em cada critério ab
 1. 🐙 `Fork` do repositório e `Pull Request` com a tentativa de solução do desafio; **(5 pontos)**
 2. 📜 `README.md` com instruções de como rodar a aplicação; **(5 pontos)**
 3. 🐋 `Dockerfile` e `docker-compose.yml` para subir a aplicação; **(5 pontos)**
-4. 🎖️ `Módulo X` do desafio entregue e funcional; **(30 pontos)**
-5. 🤴 `Módulo Y` do desafio entregue e funcional; **(55 pontos)**
+4. 🎖️ `Módulo Fila e API` do desafio entregue e funcional; **(30 pontos)**
+5. 🤴 `Módulo OCR` do desafio entregue e funcional; **(55 pontos)**
 
 Cada critério terá uma quantidade específica de pontos conforme mencionado anteriormente em cada item. O valor máximo de pontuação será de `100 pontos`. A equipe/pessoa que obtiver a maior pontuação será a vencedora.
 
@@ -68,12 +68,26 @@ Cada critério terá uma quantidade específica de pontos conforme mencionado an
 
 ## 🔥 O desafio
 
-### Módulo X: 
+### Módulo Fila e API: 
 
-🤨
+Implementar uma API que receba um arquivo de imagem e faça o upload para um serviço de fila usando. O serviço de fila deve processar a imagem através do **Módulo OCR** e retornar o objeto no formato **JSON** extraído da imagem.
 
-### Módulo Y: 
+Dicas:
 
-🫣
+- Utilize o `bullmq` para criar a fila de processamento;
+- Utilize os endpoints já criados no arquivo `src/routes.js` para implementar a solução.
+
+### Módulo OCR: 
+
+Implementar um serviço que receba o arquivo de imagem, faça o processamento da imagem e retorne o **JSON** com o objeto para o **Módulo File e API**.
+
+Dicas:
+
+- Faça o processamento da imagem ajustando para remover ruídos e preservar a qualidade da imagem e textos;
+- Faça a extração dos textos utilizando ROI (Region of Interest)
+- Utilize o `tesseract.js` para processar a imagem e extrair o texto;
+- Utilize o `opencv-js` para processar a imagem e extrair o objeto;
+
+> Utilize os endpoints já criados no arquivo `src/routes.js` para implementar a solução.
 
 
