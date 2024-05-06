@@ -1,4 +1,4 @@
-import { readCnh, readRg } from '../../services/index.js'
+import { readCnh, readRg } from '../services/index.js'
 
 const cnh = async (req, res) => {
   const result = await readCnh()

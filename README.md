@@ -96,4 +96,5 @@ Dicas:
 
 > Não precisa implementar nada além do que foi solicitado.
 
+> Veja a imagem de arquitetura em `./architecture.png`.
 
