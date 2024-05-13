@@ -1,24 +1,20 @@
-const readCnh = async () => {
-  return {
-    name: "João",
-    surname: "Silva",
-    first_issue_date: "20/10/2004",
-    birth: "20/10/1980",
-    birth_city: "São Paulo",
-    birth_uf: "SP",
-    issue_date: "20/10/2004",
-    valid_date: "20/10/2024",
-    acc: false,
-    rg: "123123123124",
-    rg_issuer: "SSP",
-    cpf: "12312312312",
-    cnh_number: "12312312312",
-    category: "A",
-    citizenship: "Brasileira",
-    observation: "Observação",
-    photo: "base64 here",
-  }
-}
+import { createWorker } from "tesseract.js";
+import cv from "@techstark/opencv-js";
+import Jimp from "jimp";
+
+const readCnh = async (file) => {
+  const worker = await createWorker("por");
+  const ret = await worker.recognize(file);
+  await worker.terminate();
+
+  const uploadedFile = Jimp.read(file, (err, uploadedFile) => {
+    if (err) throw err;
+
+    uploadedFile.greyscale().write(new Date().getTime() + ".jpg");
+
+    return uploadedFile;
+  });
+};
 
 const readRg = async () => {
   return {
@@ -29,10 +25,7 @@ const readRg = async () => {
     birth: "20/10/1980",
     citizenship: "Brasileira",
     valid_date: "20/10/2024",
-  }
-}
+  };
+};
 
-export {
-  readCnh,
-  readRg
-}
+export { readCnh, readRg };
